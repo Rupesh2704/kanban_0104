@@ -1,17 +1,27 @@
-// TicketCard.js
 import React from 'react';
 import './TicketCard.css';
+import highPriorityImg from '../assets/high-priority.jpg';
+import lowPriorityImg from '../assets/low-priority.jpg';
+import mediumPriorityImg from '../assets/medium-priority.jpg';
+import noPriorityIcon from '../assets/No-priority.jpg';
+import urgentPriorityColor from '../assets/urgent-priority-color.jpg';
+import urgentPriorityGrey from '../assets/urgent-priority-grey.jpg';
 
 function TicketCard({ ticket }) {
-  const priorityLabels = ['No priority', 'Low', 'Medium', 'High', 'Urgent'];
+  const priorityImages = {
+    0: noPriorityIcon,
+    1: lowPriorityImg,
+    2: mediumPriorityImg,
+    3: highPriorityImg,
+    4: urgentPriorityColor, 
+  };
 
   return (
     <div className="ticket-card">
-      <h4><i className="fas fa-ticket-alt"></i> {ticket.title}</h4>
+      <h4><img src={priorityImages[ticket.priority]} alt="Priority Icon" /> {ticket.title}</h4>
       <p>{ticket.description}</p>
-      <span className={`priority priority-${ticket.priority}`}>{priorityLabels[ticket.priority]}</span>
-      <p><i className="fas fa-user"></i> Assigned to: {ticket.user}</p>
-      <p><i className="fas fa-check-circle"></i> Status: {ticket.status}</p>
+      <p>Assigned to: {ticket.user}</p>
+      <p>Status: {ticket.status}</p>
     </div>
   );
 }

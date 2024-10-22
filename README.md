@@ -86,3 +86,4 @@ The project structure typically looks like this:
   <!-- 1- npm i   // instal node modules
        2 - npm run dev  // server run
         -->
+Give majore steps along with over all workflow with logical step explained in details for the above given codes 

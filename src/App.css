@@ -30,3 +30,8 @@ select {
   border: 1px solid #ccc;
   font-size: 14px;
 }
+
+img{
+  width: 20px;
+  height: 20px;
+}

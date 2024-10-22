@@ -1,13 +1,11 @@
-// GroupingSelector.js
 import React from 'react';
 import './GroupingSelector.css';
+import threeDotMenu from '../assets/3 dot menu.jpg';
 
 function GroupingSelector({ groupBy, setGroupBy }) {
   return (
     <div className="grouping-selector">
-      <label><i className="fas fa-filter"></i> Group by:</label>
-
-      {/* setgroupBy this updatating the value of groupby */}
+      <label><img src={threeDotMenu} alt="Group By Menu" /> Group by:</label>
       <select value={groupBy} onChange={(e) => setGroupBy(e.target.value)}>
         <option value="status">Status</option>
         <option value="user">User</option>
