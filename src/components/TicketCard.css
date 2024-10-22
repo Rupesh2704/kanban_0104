@@ -1,0 +1,51 @@
+/* TicketCard.css */
+.ticket-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.ticket-card h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.ticket-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.ticket-card .priority {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.ticket-card .priority-4 {
+  background-color: #d9534f; /* Urgent */
+}
+
+.ticket-card .priority-3 {
+  background-color: #f0ad4e; /* High */
+}
+
+.ticket-card .priority-2 {
+  background-color: #5bc0de; /* Medium */
+}
+
+.ticket-card .priority-1 {
+  background-color: #5cb85c; /* Low */
+}
+
+.ticket-card .priority-0 {
+  background-color: #ccc; /* No priority */
+}

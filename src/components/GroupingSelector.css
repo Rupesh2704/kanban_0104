@@ -1,0 +1,29 @@
+/* GroupingSelector.css */
+.grouping-selector {
+    display: flex;
+    align-items: center;
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grouping-selector label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .grouping-selector select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .grouping-selector select:focus {
+    border-color: #0056b3;
+  }
+  
