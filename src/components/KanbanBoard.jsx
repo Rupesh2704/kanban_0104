@@ -32,7 +32,7 @@ function KanbanBoard({ tickets }) {
     <div className="kanban-board">
       {tickets.map((group) => (
         <div key={group.group} className="kanban-column">
-          {console.log(group.group)}
+          
           <h3>
             <img src={columnIcons[group.group]} alt={`${group.group} Icon||`} style={{margin:"0 5px"}}/>
             {group.group}
