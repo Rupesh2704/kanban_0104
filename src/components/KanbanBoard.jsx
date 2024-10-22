@@ -8,7 +8,7 @@ import inProgressIcon from '../assets/in-progress.jpg';
 import backlogIcon from '../assets/Backlog.jpg'; 
 
 // group by priority icons
-import noPriorityIcon from '../assets/no-priority.jpg'; 
+import noPriorityIcon from '../assets/No-priority.jpg'; 
 import lowPriorityIcon from '../assets/low-priority.jpg'; 
 import mediumPriorityIcon from '../assets/medium-priority.jpg'; 
 import highPriorityIcon from '../assets/high-priority.jpg'; 
